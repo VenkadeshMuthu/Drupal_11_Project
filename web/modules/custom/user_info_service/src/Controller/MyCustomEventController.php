@@ -28,7 +28,7 @@ class MyCustomEventController extends ControllerBase {
    * Dispatches the custom event.
    */
   public function triggerEvent() {
-    $message = 'Hello from MyCustomEvent!';
+    $message = 'Hello from MyCustomEvent check for git!';
     $event = new MyCustomEvent($message);
     $this->eventDispatcher->dispatch($event, MyCustomEvent::EVENT_NAME);
 
