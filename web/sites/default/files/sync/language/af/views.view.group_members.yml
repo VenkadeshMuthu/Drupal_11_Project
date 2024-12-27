@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      fields:
+        name:
+          label: Gebruiker
+        group_roles:
+          label: Rolle
+        dropbutton:
+          label: Aksies
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      arguments:
+        gid:
+          exception:
+            title: Alle
+  page_1:
+    display_title: Bladsy

@@ -1,0 +1,27 @@
+uuid: 79a139f4-209c-4231-8b6b-e66f749d7b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu
+    - node.type.restaurant
+  module:
+    - file
+id: node.restaurant.field_menu
+field_name: field_menu
+entity_type: node
+bundle: restaurant
+label: Menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,16 @@
+name: MyTheme
+type: theme
+base theme: false
+description: 'A custom Drupal theme with header, content, footer, and sidebar regions.'
+package: custom
+version: '1.0.0'
+core_version_requirement: ^10 || ^11
+
+libraries:
+  - mytheme/global-styling
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+  sidebar: Sidebar

@@ -1,0 +1,23 @@
+uuid: 949cd94f-6c2f-42f4-919e-6ebedefa63ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_years_of_experience
+    - node.type.chef_profile_content_type
+id: node.chef_profile_content_type.field_years_of_experience
+field_name: field_years_of_experience
+entity_type: node
+bundle: chef_profile_content_type
+label: 'Years of Experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

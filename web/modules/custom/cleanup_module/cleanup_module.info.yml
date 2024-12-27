@@ -1,0 +1,7 @@
+name: 'Cleanup Module'
+type: module
+description: 'A module to clean expired data from a custom table using cron.'
+core_version_requirement: ^11 || ^10
+package: Custom
+dependencies:
+  - drupal:system

@@ -1,0 +1,14 @@
+uuid: cc46f2b5-e1e7-4491-9929-191748d45686
+langcode: en
+status: true
+dependencies: {  }
+id: update_content
+label: 'Update content'
+events:
+  -
+    event_name: 'rules_entity_update:node--article'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule

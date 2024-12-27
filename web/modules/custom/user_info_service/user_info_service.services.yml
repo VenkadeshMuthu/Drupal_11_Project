@@ -1,0 +1,28 @@
+services:
+  # Define the user info service.
+  user_info_service.user_info:
+    class: Drupal\user_info_service\Service\UserInfoService
+    arguments: ['@current_user']
+
+  # Custom event subscriber for MyCustomEvent.
+  user_info_service.custom_event_subscriber:
+    class: Drupal\user_info_service\EventSubscriber\MyCustomEventSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  # First approach: Custom service name with explicit class definition.
+  user_info_service.my_config_events_subscriber:
+    class: Drupal\user_info_service\EventSubscriber\ConfigEventsSubscriber
+    tags:
+      - { name: 'event_subscriber' }
+
+  # Second approach: Use the PHP class name as the service name.
+  Drupal\user_info_service\EventSubscriber\ConfigEventsSubscriber:
+    tags:
+      - { name: 'event_subscriber' }
+
+  user_info_service.node_created_subscriber:
+    class: Drupal\user_info_service\EventSubscriber\NodeCreatedSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: 'event_subscriber' }

@@ -1,0 +1,5 @@
+name: 'My drupal tasks'
+description: 'This is my all drupal tasks'
+type: module
+core_version_requirement: ^10 || ^11
+package: Custom

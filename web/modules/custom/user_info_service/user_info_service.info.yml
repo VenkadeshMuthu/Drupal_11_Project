@@ -1,0 +1,5 @@
+name: 'User Info Service'
+type: module
+description: 'Provides user information as a service.'
+core_version_requirement: ^10 || ^11
+package: Custom

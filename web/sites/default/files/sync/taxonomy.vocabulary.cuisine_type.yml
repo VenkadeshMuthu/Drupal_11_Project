@@ -1,0 +1,9 @@
+uuid: 75288ad3-8654-42c8-a19b-15efe9cc3456
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cuisine Type'
+vid: cuisine_type
+description: null
+weight: 0
+new_revision: false

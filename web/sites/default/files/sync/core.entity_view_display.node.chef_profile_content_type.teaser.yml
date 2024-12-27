@@ -1,0 +1,33 @@
+uuid: b6892e88-d982-4467-8ad1-33830f18eacc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.chef_profile_content_type.field_awards
+    - field.field.node.chef_profile_content_type.field_bio
+    - field.field.node.chef_profile_content_type.field_chef_image
+    - field.field.node.chef_profile_content_type.field_chef_name
+    - field.field.node.chef_profile_content_type.field_specialty
+    - field.field.node.chef_profile_content_type.field_years_of_experience
+    - node.type.chef_profile_content_type
+  module:
+    - user
+id: node.chef_profile_content_type.teaser
+targetEntityType: node
+bundle: chef_profile_content_type
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_awards: true
+  field_bio: true
+  field_chef_image: true
+  field_chef_name: true
+  field_specialty: true
+  field_years_of_experience: true
+  langcode: true

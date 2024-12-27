@@ -1,0 +1,24 @@
+uuid: acc55544-3e6c-48c6-96e2-c2e64b4e7eba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.food_item
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__food_item_block_1
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: 'views_block:food_item-block_1'
+settings:
+  id: 'views_block:food_item-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

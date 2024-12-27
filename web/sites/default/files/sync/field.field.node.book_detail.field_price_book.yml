@@ -1,0 +1,29 @@
+uuid: f7f9e49c-0640-4e26-96c5-5b6732e24c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_book
+    - node.type.book_detail
+    - taxonomy.vocabulary.price_range
+id: node.book_detail.field_price_book
+field_name: field_price_book
+entity_type: node
+bundle: book_detail
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      price_range: price_range
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        changed:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: விண்ணப்பி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      empty:
+        area_text_custom:
+          content: 'எந்த உள்ளடக்கங்களும் இல்லை.'

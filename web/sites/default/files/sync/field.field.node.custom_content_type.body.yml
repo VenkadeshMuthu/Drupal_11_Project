@@ -1,0 +1,26 @@
+uuid: 3f995c9d-3192-4d3e-a8a7-36ea884d67db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.custom_content_type
+  module:
+    - text
+_core:
+  default_config_hash: X5mNePq4CTXFDi62tqv1mIPw6QscvtZjBQ0JeTwU_uw
+id: node.custom_content_type.body
+field_name: body
+entity_type: node
+bundle: custom_content_type
+label: 'Car Detail'
+description: 'More specific information about the book.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

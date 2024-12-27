@@ -1,0 +1,4 @@
+services:
+  cleanup_module.cleanup_cron:
+    class: Drupal\cleanup_module\Cron\CleanupCron
+    arguments: ['@database', '@logger.factory']

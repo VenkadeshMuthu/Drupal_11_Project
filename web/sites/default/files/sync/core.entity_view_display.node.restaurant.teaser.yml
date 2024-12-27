@@ -1,0 +1,45 @@
+uuid: 558c5635-a8fd-489f-be56-9b2789216fe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.restaurant.field_average_rating
+    - field.field.node.restaurant.field_chef_detailes
+    - field.field.node.restaurant.field_cuisine_type
+    - field.field.node.restaurant.field_delivery_options
+    - field.field.node.restaurant.field_location
+    - field.field.node.restaurant.field_menu
+    - field.field.node.restaurant.field_operating_hours
+    - field.field.node.restaurant.field_phone_number
+    - field.field.node.restaurant.field_price_range
+    - field.field.node.restaurant.field_restaurant_description
+    - field.field.node.restaurant.field_restaurant_image
+    - field.field.node.restaurant.field_restaurant_name
+    - node.type.restaurant
+  module:
+    - user
+id: node.restaurant.teaser
+targetEntityType: node
+bundle: restaurant
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_average_rating: true
+  field_chef_detailes: true
+  field_cuisine_type: true
+  field_delivery_options: true
+  field_location: true
+  field_menu: true
+  field_operating_hours: true
+  field_phone_number: true
+  field_price_range: true
+  field_restaurant_description: true
+  field_restaurant_image: true
+  field_restaurant_name: true
+  langcode: true

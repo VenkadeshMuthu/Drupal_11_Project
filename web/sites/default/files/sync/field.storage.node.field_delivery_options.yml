@@ -1,0 +1,30 @@
+uuid: 6c26890d-a6d3-4656-9776-3da3870f511a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_delivery_options
+field_name: field_delivery_options
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: home_delivery
+      label: 'Home Delivery'
+    -
+      value: pick_up
+      label: 'Pick Up'
+    -
+      value: no_delivery
+      label: 'No Delivery'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

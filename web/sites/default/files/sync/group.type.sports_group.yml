@@ -1,0 +1,11 @@
+uuid: a78dbb38-5ec6-4960-a9b2-ad9f692fb388
+langcode: en
+status: true
+dependencies: {  }
+id: sports_group
+label: 'Sports Group'
+description: 'A short explanation of this group type.'
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

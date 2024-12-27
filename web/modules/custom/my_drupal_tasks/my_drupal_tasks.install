@@ -1,0 +1,56 @@
+<?php
+/**
+ * Implements hook_schema().
+ */
+function my_drupal_tasks_schema() {
+  $schema['tasks'] = [
+    'description' => 'Table to store task information.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'The unique identifier for the row.',
+      ],
+      'task_name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Name of the task.',
+      ],
+      'description' => [
+        'type' => 'text',
+        'not null' => TRUE,
+        'description' => 'Description of the task.',
+      ],
+      'task_date' => [
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => TRUE,
+        'description' => 'Date of the task in YYYY-MM-DD format.',
+      ],
+      'status' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Current status of the task.',
+      ],
+      'image' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+        'default' => NULL,
+        'description' => 'File path of the associated image.',
+      ],
+      'created_at' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Timestamp when the task was created.',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

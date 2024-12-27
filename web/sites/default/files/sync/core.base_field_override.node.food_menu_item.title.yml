@@ -1,0 +1,18 @@
+uuid: a9ef9d22-9a9e-4ead-b37d-f7ac79995b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.food_menu_item
+id: node.food_menu_item.title
+field_name: title
+entity_type: node
+bundle: food_menu_item
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #2feef5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#content {
+    padding: 20px;
+}
+
+#sidebar {
+    background-color: #2feef5;
+    padding: 10px;
+}
+
+#footer {
+    background-color: #2feef5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #header, #content, #sidebar, #footer {
+        padding: 10px;
+        text-align: center;
+    }
+}

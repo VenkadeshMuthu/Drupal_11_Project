@@ -1,0 +1,59 @@
+display:
+  default:
+    display_options:
+      title: பதிவு
+      fields:
+        title:
+          label: தலைப்பு
+          separator: ', '
+        type:
+          label: 'உள்ளடக்க வகை'
+          separator: ', '
+        status:
+          label: நிலை
+          settings:
+            format_custom_false: வெளியிடப்படாத
+            format_custom_true: வெளியிடப்பட்டது
+          separator: ', '
+        changed:
+          label: மாற்றப்பட்டது
+          separator: ', '
+        dropbutton:
+          label: செயல்பாடுகள்
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« முதல்'
+            last: 'கடந்த »'
+          expose:
+            items_per_page_options_all_label: '- அனைத்தும் -'
+      exposed_form:
+        options:
+          submit_button: விண்ணப்பி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      empty:
+        area_text_custom:
+          content: 'எந்த உள்ளடக்கங்களும் இல்லை.'
+      arguments:
+        gid:
+          exception:
+            title: எல்லா
+      filters:
+        status:
+          group_info:
+            group_items:
+              1:
+                title: வெளியிடப்பட்டது
+              2:
+                title: வெளியிடப்படாத
+        type:
+          expose:
+            label: வகை
+  page_1:
+    display_title: பக்கம்
+    display_options:
+      menu:
+        title: பதிவு

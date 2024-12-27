@@ -1,0 +1,29 @@
+uuid: 4ef8df58-8640-421d-902f-9cba33af1523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuisine_type
+    - node.type.restaurant
+    - taxonomy.vocabulary.cuisine_type
+id: node.restaurant.field_cuisine_type
+field_name: field_cuisine_type
+entity_type: node
+bundle: restaurant
+label: 'Cuisine Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cuisine_type: cuisine_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

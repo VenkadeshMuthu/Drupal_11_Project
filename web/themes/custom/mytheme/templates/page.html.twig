@@ -1,0 +1,17 @@
+<div id="header">
+  {{ page.header }}
+</div>
+
+<div id="content">
+  {{ page.content }}
+</div>
+
+{% if page.sidebar %}
+  <aside id="sidebar">
+    {{ page.sidebar }}
+  </aside>
+{% endif %}
+
+<div id="footer">
+  {{ page.footer }}
+</div>

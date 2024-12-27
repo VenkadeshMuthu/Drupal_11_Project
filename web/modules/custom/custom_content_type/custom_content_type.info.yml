@@ -1,0 +1,6 @@
+name: Car Detail
+type: module
+description: 'Adds Car detail content type.'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - node

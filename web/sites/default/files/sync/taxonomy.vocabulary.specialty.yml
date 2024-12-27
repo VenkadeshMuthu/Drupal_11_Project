@@ -1,0 +1,9 @@
+uuid: b61b6f93-535b-42ef-be52-1daada968683
+langcode: en
+status: true
+dependencies: {  }
+name: Specialty
+vid: specialty
+description: null
+weight: 0
+new_revision: false

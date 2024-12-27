@@ -1,0 +1,29 @@
+uuid: b3c71b81-3eb0-4d7f-a875-69b423ec4861
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.custom_content_type.body
+    - node.type.custom_content_type
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: F5Q9eiyVfcbCsezUfpXA3PR4AbWvjFrS9YmEM14nkzo
+id: node.custom_content_type.default
+targetEntityType: node
+bundle: custom_content_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

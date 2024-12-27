@@ -1,0 +1,43 @@
+uuid: 59f28ccb-b668-414f-913d-0f3253072c5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food_menu_item.body
+    - field.field.node.food_menu_item.field_cuisine_type_item
+    - field.field.node.food_menu_item.field_description
+    - field.field.node.food_menu_item.field_menu_item_image
+    - field.field.node.food_menu_item.field_menu_item_name
+    - field.field.node.food_menu_item.field_price
+    - field.field.node.food_menu_item.field_spicy_level
+    - node.type.food_menu_item
+  module:
+    - text
+    - user
+id: node.food_menu_item.teaser
+targetEntityType: node
+bundle: food_menu_item
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cuisine_type_item: true
+  field_description: true
+  field_menu_item_image: true
+  field_menu_item_name: true
+  field_price: true
+  field_spicy_level: true
+  langcode: true

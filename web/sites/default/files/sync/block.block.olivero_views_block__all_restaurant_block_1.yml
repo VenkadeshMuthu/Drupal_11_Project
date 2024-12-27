@@ -1,0 +1,24 @@
+uuid: c0e34751-7896-40aa-8e21-6e8a524da743
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.all_restaurant
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__all_restaurant_block_1
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'views_block:all_restaurant-block_1'
+settings:
+  id: 'views_block:all_restaurant-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

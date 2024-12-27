@@ -1,0 +1,23 @@
+uuid: a9c9bd61-525c-4387-abfd-54735b555591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_average_rating
+    - node.type.restaurant
+id: node.restaurant.field_average_rating
+field_name: field_average_rating
+entity_type: node
+bundle: restaurant
+label: 'Average Rating'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

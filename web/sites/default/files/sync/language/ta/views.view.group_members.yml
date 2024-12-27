@@ -1,0 +1,37 @@
+display:
+  default:
+    display_options:
+      fields:
+        name:
+          label: பயனர்
+          separator: ', '
+        group_roles:
+          label: பாத்திரங்கள்
+          separator: ', '
+        changed:
+          label: மாற்றப்பட்டது
+          separator: ', '
+        created:
+          separator: ', '
+        dropbutton:
+          label: செயல்பாடுகள்
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« முதல்'
+            last: 'கடந்த »'
+          expose:
+            items_per_page_options_all_label: '- அனைத்தும் -'
+      exposed_form:
+        options:
+          submit_button: விண்ணப்பி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      arguments:
+        gid:
+          exception:
+            title: எல்லா
+  page_1:
+    display_title: பக்கம்

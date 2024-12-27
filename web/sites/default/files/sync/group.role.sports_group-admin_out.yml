@@ -1,0 +1,15 @@
+uuid: ee8c7387-c9ef-4568-8a56-f9597df602f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.sports_group
+    - user.role.administrator
+id: sports_group-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: sports_group
+permissions: {  }

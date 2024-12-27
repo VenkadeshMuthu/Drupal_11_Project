@@ -1,0 +1,22 @@
+uuid: 602d1e06-b2a4-470c-b93a-661d662c6258
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_awards
+    - node.type.chef_profile_content_type
+  module:
+    - text
+id: node.chef_profile_content_type.field_awards
+field_name: field_awards
+entity_type: node
+bundle: chef_profile_content_type
+label: Awards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

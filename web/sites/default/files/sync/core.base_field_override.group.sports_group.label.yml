@@ -1,0 +1,18 @@
+uuid: af2fc66c-ed75-4eb9-9678-cf37c0764ce4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.sports_group
+id: group.sports_group.label
+field_name: label
+entity_type: group
+bundle: sports_group
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

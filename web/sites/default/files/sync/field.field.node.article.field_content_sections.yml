@@ -1,0 +1,42 @@
+uuid: 9ab0d787-ac45-44f6-9a2c-296314db821f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_sections
+    - node.type.article
+    - paragraphs.paragraphs_type.title
+    - paragraphs.paragraphs_type.video_embed
+  module:
+    - entity_reference_revisions
+id: node.article.field_content_sections
+field_name: field_content_sections
+entity_type: node
+bundle: article
+label: 'Content Sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      title: title
+      video_embed: video_embed
+    negate: 0
+    target_bundles_drag_drop:
+      gallery:
+        weight: 5
+        enabled: false
+      product:
+        weight: 6
+        enabled: false
+      title:
+        weight: 7
+        enabled: true
+      video_embed:
+        weight: 8
+        enabled: true
+field_type: entity_reference_revisions

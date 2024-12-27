@@ -1,0 +1,4 @@
+my_module_styles:
+  css:
+    theme:
+      css/my_styles.css: {}

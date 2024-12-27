@@ -1,0 +1,31 @@
+my_drupal_tasks.create_task:
+  path: 'admin/create_task'
+  defaults:
+    _form: '\Drupal\my_drupal_tasks\Controller\CreateTaskController'
+    _title: 'Create Tasks'
+  requirements:
+    _permission: 'administer site configuration'
+
+my_drupal_tasks.display_tasks:
+  path: '/admin/tasks'
+  defaults:
+    _controller: '\Drupal\my_drupal_tasks\Controller\TaskController::displayTasks'
+    _title: 'Task List'
+  requirements:
+    _permission: 'access content'
+
+my_drupal_tasks.task_edit:
+  path: 'admin/tasks/{id}/edit'
+  defaults:
+    _form: '\Drupal\my_drupal_tasks\Controller\EditTaskForm'
+    _title: 'Edit Task'
+  requirements:
+    _permission: 'administer content'
+
+my_drupal_tasks.task_delete:
+  path: 'admin/tasks/{id}/delete'
+  defaults:
+    _controller: '\Drupal\my_drupal_tasks\Controller\TaskController::deleteTask'
+    _title: 'Delete Task'
+  requirements:
+    _permission: 'administer content'

@@ -1,0 +1,25 @@
+uuid: 74b9e3c6-06d9-4d58-a256-cd9f9f4cb302
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+_core:
+  default_config_hash: oV7wyUbjQU4AOc1QlpboiNCvwfDRdDKEMycBHvsEsbs
+id: node.field_upload_file
+field_name: field_upload_file
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

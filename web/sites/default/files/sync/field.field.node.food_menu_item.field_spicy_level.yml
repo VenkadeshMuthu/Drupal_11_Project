@@ -1,0 +1,29 @@
+uuid: 61e84795-069e-4ed1-bca6-29865140e6f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spicy_level
+    - node.type.food_menu_item
+    - taxonomy.vocabulary.spicy_level
+id: node.food_menu_item.field_spicy_level
+field_name: field_spicy_level
+entity_type: node
+bundle: food_menu_item
+label: 'Spicy Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      spicy_level: spicy_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

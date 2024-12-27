@@ -1,0 +1,23 @@
+uuid: 7effa681-cf61-4ad0-8d08-62a3759b8ad9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.restaurant
+id: node.restaurant.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: restaurant
+label: 'Phone Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10
+  max: 12
+  prefix: ''
+  suffix: ''
+field_type: integer

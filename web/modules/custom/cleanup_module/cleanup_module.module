@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function cleanup_module_cron() {
+  // Execute the cleanup cron service.
+  \Drupal::service('cleanup_module.cleanup_cron')->execute();
+}

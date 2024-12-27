@@ -1,0 +1,29 @@
+uuid: 85c5715e-1927-48a6-8c0a-53744c10df90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialty
+    - node.type.chef_profile_content_type
+    - taxonomy.vocabulary.specialty
+id: node.chef_profile_content_type.field_specialty
+field_name: field_specialty
+entity_type: node
+bundle: chef_profile_content_type
+label: Specialty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specialty: specialty
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

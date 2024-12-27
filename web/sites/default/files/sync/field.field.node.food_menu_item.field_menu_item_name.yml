@@ -1,0 +1,19 @@
+uuid: fd4f7222-b6bc-4506-a7bd-7e9936615d27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_item_name
+    - node.type.food_menu_item
+id: node.food_menu_item.field_menu_item_name
+field_name: field_menu_item_name
+entity_type: node
+bundle: food_menu_item
+label: 'Menu Item Name '
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

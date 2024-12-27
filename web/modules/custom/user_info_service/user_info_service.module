@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\user_info_service\Event\NodeCreatedEvent;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function user_info_service_entity_insert(EntityInterface $entity) {
+  if ($entity->getEntityTypeId() === 'node') {
+    // Dispatch the custom event.
+    $event_dispatcher = \Drupal::service('event_dispatcher');
+    $event = new NodeCreatedEvent($entity);
+    $event_dispatcher->dispatch($event, NodeCreatedEvent::EVENT_NAME);
+  }
+}

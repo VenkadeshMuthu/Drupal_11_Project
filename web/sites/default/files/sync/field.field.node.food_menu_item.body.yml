@@ -1,0 +1,24 @@
+uuid: ef51a0d6-f509-4357-936b-7aba66b7af64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.food_menu_item
+  module:
+    - text
+id: node.food_menu_item.body
+field_name: body
+entity_type: node
+bundle: food_menu_item
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

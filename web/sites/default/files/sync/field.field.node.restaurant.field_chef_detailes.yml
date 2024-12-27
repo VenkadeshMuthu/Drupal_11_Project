@@ -1,0 +1,29 @@
+uuid: a0a44c4b-f1b9-4b2c-a9c6-92d3f6be7b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chef_detailes
+    - node.type.chef_profile_content_type
+    - node.type.restaurant
+id: node.restaurant.field_chef_detailes
+field_name: field_chef_detailes
+entity_type: node
+bundle: restaurant
+label: 'chef detailes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      chef_profile_content_type: chef_profile_content_type
+    sort:
+      field: field_chef_name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

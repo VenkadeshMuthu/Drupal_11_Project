@@ -1,0 +1,15 @@
+user_info_service.user_info:
+  path: '/user-info'
+  defaults:
+    _controller: '\Drupal\user_info_service\Controller\UserInfoController::displayUserInfo'
+    _title: 'User Info'
+  requirements:
+    _permission: 'access content'
+
+mymodule.trigger_event:
+  path: '/custom-event/trigger'
+  defaults:
+    _controller: '\Drupal\user_info_service\Controller\MyCustomEventController::triggerEvent'
+    _title: 'Trigger Custom Event'
+  requirements:
+    _permission: 'access content'

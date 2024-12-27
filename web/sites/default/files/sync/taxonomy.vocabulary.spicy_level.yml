@@ -1,0 +1,9 @@
+uuid: 82e79b91-9c8a-469f-9e14-36bc7a9ad6fe
+langcode: en
+status: true
+dependencies: {  }
+name: 'Spicy Level'
+vid: spicy_level
+description: null
+weight: 0
+new_revision: false

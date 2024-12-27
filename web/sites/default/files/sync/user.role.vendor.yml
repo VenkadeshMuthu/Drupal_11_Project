@@ -1,0 +1,16 @@
+uuid: 105b60fa-d5de-42bf-bff9-0599a3b35954
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+  module:
+    - block_content
+    - comment
+id: vendor
+label: vendor
+weight: 4
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'view any basic block content history'

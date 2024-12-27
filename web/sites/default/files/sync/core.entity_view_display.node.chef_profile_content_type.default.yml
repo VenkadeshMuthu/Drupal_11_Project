@@ -1,0 +1,78 @@
+uuid: 71ad330a-766e-48a9-8f4f-b1ba89ba88d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.chef_profile_content_type.field_awards
+    - field.field.node.chef_profile_content_type.field_bio
+    - field.field.node.chef_profile_content_type.field_chef_image
+    - field.field.node.chef_profile_content_type.field_chef_name
+    - field.field.node.chef_profile_content_type.field_specialty
+    - field.field.node.chef_profile_content_type.field_years_of_experience
+    - node.type.chef_profile_content_type
+  module:
+    - image
+    - text
+    - user
+id: node.chef_profile_content_type.default
+targetEntityType: node
+bundle: chef_profile_content_type
+mode: default
+content:
+  field_awards:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_bio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_chef_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_chef_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_specialty:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_years_of_experience:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

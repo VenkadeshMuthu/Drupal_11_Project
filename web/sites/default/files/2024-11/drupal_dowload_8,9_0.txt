@@ -1,0 +1,6 @@
+download drupal 8 : composer create-project drupal/drupal:^8 my-drupal-8
+ddev config : ddev config
+download drupal 9 : composer create-project drupal/recommended-project my-drupal-9
+download admin tool bar drupal 11 : ddev exec composer require 'drupal/admin_toolbar:^3.5'
+download drush : ddev composer require drush/drush
+clear cache : ddev drush cr

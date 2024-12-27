@@ -1,0 +1,39 @@
+uuid: 33e8037a-e342-4830-b5c1-7fc08243873d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.book_detail.body
+    - field.field.node.book_detail.field_book_image
+    - field.field.node.book_detail.field_book_name
+    - field.field.node.book_detail.field_description_book
+    - field.field.node.book_detail.field_price_book
+    - node.type.book_detail
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 2IV0jr0D-9UnWsIrYrNlLAUTgWj7m-ft0-MlXVZ8Nbs
+id: node.book_detail.teaser
+targetEntityType: node
+bundle: book_detail
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_book_image: true
+  field_book_name: true
+  field_description_book: true
+  field_price_book: true
+  langcode: true
